@@ -131,19 +131,21 @@ a{
     margin-left: 5vw;
 }
 .tambah{
-    border-right:2px solid black ;
-    border-top: 2px solid black;
-    width: 50px;
-    height: 50px;
+    font-size: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: -10px;
+    left: -45px;
+    color: black;
 }
+
 .pesawat{
     background-image: url(../../resource/img/pesiwit.jpg);
     background-size: cover;
-    width: 220px;
-    height: 190px;
+    width: 230px;
+    height: 180px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -151,8 +153,8 @@ a{
     color: rgb(252, 239, 239);
     padding: 5px 10px 10px 10px;
     position: absolute;
-    top:100px;
-    left: 5px;
+    top:75px;
+    left: 50px;
 }
 .head{
     display: flex;
@@ -184,4 +186,122 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.calender{
+    color: whitesmoke;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    width: 230px;
+    height: 190px;
+    padding: 10px;
+    border-radius: 20px;
+    background: #f8b4c0;
+    background: radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 40%);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 40%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 40%);
+}
+.calender .top, .calender .tiket, .calender .event{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+    width: 230px;
+    height: 40px;
+}
+.titik{
+    border: 1px dotted white;
+    margin-top: 10px;
+}
+.calender .tiket{
+    margin-top: 55px;
+}
+.sayap{
+    width: 230px;
+    height: 170px;
+    border-radius: 15px;
+    background-color: #110f0f;
+    position: absolute;
+    right: 60px;
+    top: 0px;
+    color: white;
+    padding: 10px;
+}
+.atas, .nama{
+    width: 230px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pic{
+    width: 230px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pic img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.waw{
+    width: 230px;
+    height: 95px;
+    background-color: #0e0d13;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    right: 60px;
+    top: 195px;
+    padding: 10px;
+}
+.waw .title, .jkf .title{
+    font-size: 25px;
+}
+.lingkaran{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    right: 115px;
+    left: 115px;
+    top:45px;
+}
+.titik-titik{
+    border-left: 1px dotted white;
+    height: 50px;
+    position: absolute;
+    top: 65px;
+    left: 125px;
+
+}
+.bawah{
+    display: flex;
+    height: 50px;
+    width: 230px;
+    margin-top:30px ;
+    align-items: center;
+    justify-content: space-between;
+    font-size:19px ;
+}
+.jkf{
+    width: 230px;
+    height: 95px;
+    padding: 10px;
+    position: absolute;
+    bottom: 155px;
+    right: 60px;
+    background-color: silver;
+    border-radius: 10px;
+    color: white;
+}
+.titik2{
+    border-left:1px dotted white;
+    height: 50px;
+    position: absolute;
+    left: 125px;
+    top: 0;
 }
