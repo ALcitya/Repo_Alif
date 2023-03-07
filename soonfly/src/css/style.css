@@ -1,0 +1,187 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 98vw;
+    height: 50px;
+    background-color: rgb(18, 18, 24);
+    color:whitesmoke;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-size: medium;
+}
+.judul{
+    width: 20vw;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.judul img{
+    height: 30px;
+    width: 
+    30px;
+}
+.tengah{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+.tengah ul{
+    display: flex;
+    width: 35vw;
+    justify-content: space-between;
+}
+.tengah ul li{
+    list-style-type: none;
+}
+.action{
+    display: flex;
+    align-items: center;
+}
+.buton{
+    border: 1px solid white;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+main{
+    width: 85vw;
+    height: 90vh;
+    margin:8vh 5vw 10vh 8vw;
+    position: relative;
+}
+.aplikasi{
+    height:20px;
+    width:100px;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: 500;
+}
+.header1 {
+    font-size: 50px;
+    width:30vw;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.text p{
+    width:35vw;
+    color: black;
+}
+.get_started{
+    width: 200px;
+    height:40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    margin-bottom: 45px;
+}
+.status{
+    width:50vw;
+    height: 20vh;
+    display: flex;
+}
+.value{
+    width: 20vw;
+    height: 20vh;
+}
+.top{
+    width: 17vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.garis{
+    border-top:2px solid black;
+    display: flex;
+    align-items: center;
+    width: 15vw;
+}
+.angka{
+    font-size: 30px;
+}
+.keterangan{
+    width: 18vw;
+}
+a{
+    color: black;
+    font-weight: 800;
+}
+.gambar{
+    width: 45vw;
+    height: 90vh;
+    background-color: brown;   
+    position: absolute;
+    top: 0;
+    right:0;
+    margin-left: 5vw;
+}
+.tambah{
+    border-right:2px solid black ;
+    border-top: 2px solid black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pesawat{
+    background-image: url(../../resource/img/pesiwit.jpg);
+    background-size: cover;
+    width: 220px;
+    height: 190px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(252, 239, 239);
+    padding: 5px 10px 10px 10px;
+    position: absolute;
+    top:100px;
+    left: 5px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    font-size: 10px;
+}
+.info{
+    font-weight: 900;
+    font-size: 20px;
+}
+.foot{
+    width: 220px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foot h2{
+    width: 100px;
+}
+.arow{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

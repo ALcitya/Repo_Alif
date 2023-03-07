@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    position:relative;
+}
+#section-1{
+    background-color: #282f3a;
+    width: 5vw;
+    height: 100vh;
+    position:relative;
+    color:white;
+}
+#section-1 .logo{
+    background-color: #59C937;
+    height: 10vh;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0;
+}
+#section-1 .logo img{
+    height: 20px;
+    width: 20px;
+}
+#section-1 .sosial-media{
+    height: 20vh;
+    width: 5vw;
+    display: flex;
+    justify-content:center;
+    position:absolute;
+    top:60vh;
+}
+#section-1 .sosial-media ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#section-1 .sosial-media ul li{
+    list-style-type:none;
+}
+#section-1 .burger{
+    height:10vh;
+    width:5vw;
+    position: absolute;
+    bottom:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#section-2{
+    margin-left:5vw;
+    width:50vw;
+    height:100vh;
+    background-color:#f4f5f9;
+    position:absolute;
+    top:0;
+}
+#section-2 .main{
+    width: 42.5vw;
+    height: 80vh;
+    margin-left:5vw;
+}
+.main p{
+    font-family: 'Roboto', sans-serif;
+}
+.main .navbar-1{
+    height: 10vh;
+}
+.main .navbar-1 ul{
+    height: 10vh;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.main .navbar-1 ul li{
+    list-style-type: none;
+}
+.main .judul{
+    height:20vh;
+    margin-top:10vh;
+}
+.main .judul p{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+.main .description p{
+    margin-top:8vh;
+    margin-bottom:4vh;
+}
+.main .button{
+    height:50px;
+    width:150px;
+    border-radius:25%;
+    background-color: rgb(89, 201, 55);
+    box-shadow: 0px 40px 100px 0px rgba(64,222,184,1);
+    -webkit-box-shadow: 0px 40px 100px 0px rgba(64,222,184,1);
+    -moz-box-shadow: 0px 40px 100px 0px rgba(64,222,184,1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.main .button a{
+    color:#f3f5f9;
+    text-decoration:none;
+}
+.main .fungsi{
+    position:relative;
+    height: 32vh;
+    display:flex;
+    justify-content: space-between;
+    font-size: small;
+}
+.main .fungsi .aloe-vera{
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:15vh;
+    width:20vw;
+}
+.main .fungsi .home-decors{
+    position:absolute;
+    right:0;
+    bottom:0;
+    height:15vh;
+    width:20vw;
+}.vas img{
+    position:absolute;
+    right:-100px;
+    bottom:25vh;
+    height:100px;
+    width:200px;
+    box-shadow: -20px 40px 60px 0px rgba(64,222,184,1);
+    -webkit-box-shadow: -20px 40px 60px 0px rgba(64,222,184,1);
+    -moz-box-shadow: -20px 40px 60px 0px rgba(64,222,184,1);
+    border-right:25px solid #59C937;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    z-index: 9999;
+}
+#section-3{
+    height: 100vh;
+    width:45vw;
+    background-image:url(../../resource/img/vas.jfif);
+    background-size: cover;
+    position:absolute;
+    top:0;
+    right:0;
+}
+#section-3 .navbar-2{
+    height: 10vh;
+    width: 45vw;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left:0;
+    margin-right:0;
+}
+#section-3 .navbar-2 .shop{
+    height: 5vh;
+    width:20vw;
+}
+#section-3 .navbar-2 .shop ul{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+#section-3 .navbar-2 .shop ul li{
+    list-style-type:none;
+}
+#section-3 .navbar-2 .shop ul li a{
+    text-decoration:none;
+    color:#282f3a;
+}
+#section-3 .navbar-2 .profile{
+    height: 10vh;
+    width: 5vw;
+}
+#section-3 .navbar-2 .profile img{
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+}
+
+#section-3 .circle{
+    width: 140px;
+    height: 140px;
+    border: 3px solid #f3f5f9;
+    border-radius:50%;
+    position: absolute;
+    top:40%;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section-3 .circle .play{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #59c937a6;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#section-3 .circle .play .button i{
+    color:#f4f5f9;
+}
