@@ -3,9 +3,12 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(228, 235, 241);
+}
 nav{
     width: 98vw;
-    height: 50px;
+    height: 8vh;
     background-color: rgb(18, 18, 24);
     color:whitesmoke;
     display: flex;
@@ -54,8 +57,8 @@ nav{
 }
 main{
     width: 85vw;
-    height: 90vh;
-    margin:8vh 5vw 10vh 8vw;
+    height: 75vh;
+    margin:8vh 5vw 5vh 8vw;
     position: relative;
 }
 .aplikasi{
@@ -123,8 +126,7 @@ a{
 }
 .gambar{
     width: 45vw;
-    height: 90vh;
-    background-color: brown;   
+    height: 75vh;
     position: absolute;
     top: 0;
     right:0;
@@ -136,16 +138,16 @@ a{
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: -10px;
-    left: -45px;
+    top: 0;
+    left: 0;
     color: black;
 }
 
 .pesawat{
     background-image: url(../../resource/img/pesiwit.jpg);
     background-size: cover;
-    width: 230px;
-    height: 180px;
+    width: 220px;
+    height: 160px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -191,22 +193,22 @@ a{
     color: whitesmoke;
     position: absolute;
     left: 50px;
-    bottom: 100px;
-    width: 230px;
-    height: 190px;
+    bottom: 50px;
+    width: 220px;
+    height: 160px;
     padding: 10px;
     border-radius: 20px;
     background: #f8b4c0;
-    background: radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 40%);
-    background: -webkit-radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 40%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 40%);
+    background: radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 30%);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 30%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 30%);
 }
 .calender .top, .calender .tiket, .calender .event{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 100;
-    width: 230px;
+    width: 220px;
     height: 40px;
 }
 .titik{
@@ -214,11 +216,11 @@ a{
     margin-top: 10px;
 }
 .calender .tiket{
-    margin-top: 55px;
+    margin-top: 40px;
 }
 .sayap{
     width: 230px;
-    height: 170px;
+    height: 150px;
     border-radius: 15px;
     background-color: #110f0f;
     position: absolute;
@@ -229,32 +231,32 @@ a{
 }
 .atas, .nama{
     width: 230px;
-    height: 20px;
+    height: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .pic{
-    width: 230px;
-    height: 130px;
+    width: 220px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .pic img{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 .waw{
     width: 230px;
-    height: 95px;
+    height: 75px;
     background-color: #0e0d13;
     color: white;
     border-radius: 10px;
     position: absolute;
     right: 60px;
-    top: 195px;
+    top: 175px;
     padding: 10px;
 }
 .waw .title, .jkf .title{
@@ -268,35 +270,34 @@ a{
     position: absolute;
     right: 115px;
     left: 115px;
-    top:45px;
+    top:35px;
 }
 .titik-titik{
     border-left: 1px dotted white;
-    height: 50px;
+    height: 30px;
     position: absolute;
-    top: 65px;
+    top: 60px;
     left: 125px;
-
 }
 .bawah{
     display: flex;
     height: 50px;
     width: 230px;
-    margin-top:30px ;
+    margin-top:10px ;
     align-items: center;
     justify-content: space-between;
-    font-size:19px ;
+    font-size:15px ;
 }
 .jkf{
     width: 230px;
-    height: 95px;
+    height: 75px;
     padding: 10px;
     position: absolute;
-    bottom: 155px;
+    bottom: 115px;
     right: 60px;
     background-color: silver;
     border-radius: 10px;
-    color: white;
+    color: black;
 }
 .titik2{
     border-left:1px dotted white;
@@ -304,4 +305,42 @@ a{
     position: absolute;
     left: 125px;
     top: 0;
+}
+.barcode{
+    height: 85px;
+    width: 230px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 60px;
+    padding: 10px;
+}
+.barcode .flight{
+    font-size: 10px;
+}
+.barcode .titik2{
+    border-bottom:1px solid black;
+    height: 3px;
+    width: 230px;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+}
+.barcode .tengah{
+    width: 230px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tengah i{
+    font-size: 10px;
+}
+.code{
+    margin-top: 5px;
+    width: 230px;
+    height: 30px;
+    background-image: url(../../resource/img/barcode.jpg);
+    background-size: cover;
 }
