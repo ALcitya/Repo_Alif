@@ -105,7 +105,7 @@ header .garis{
 .watermark h1:nth-child(2){
     line-height: 0.5;
 }
-.lingkaran{
+.kiri .lingkaran{
     border: 2px solid purple;
     border-radius: 50%;
     width: 80px;
@@ -139,7 +139,7 @@ header .garis{
     z-index: 99;
 }
 .vintage h5{
-    border-top:2px solid rgba(0, 0, 0, 0.893) ;
+    border-top:2px solid gray ;
     width: 110px;
     position: absolute;
     left: 30vw;
@@ -175,4 +175,95 @@ header .garis{
     border-left: 50px solid purple;
     height: 1100px;
     transform: rotate(35deg);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 3vw;
+    top: 30px;
+    width: 110px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+.speed{
+    position: absolute;
+    right: 17vw;
+    top: 40vh;
+}
+.speed h4{
+    border-top:2px solid gray;
+    width: 120px;
+    transform: translateX(30px);
+    font-weight: 600;
+    font-size: 15px;
+}
+.speed h5{
+    border-bottom:3px solid purple;
+    width: 120px;
+    transform: translateX(10px);
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.type{
+    position: absolute;
+    right: 3vw;
+    top: 30vh;
+    font-size: 20px;
+}
+.type ul li{
+    line-height: 70px;
+    font-size:27px ;
+    color:rgb(90, 84, 84);
+}
+ul li{
+    list-style-type: none;
+}
+.slide{
+    position: absolute;
+    bottom: 2vh;
+    right: 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 100px;
+}
+.slide .next{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide .lingkaran{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #21201f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide ul{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 10px;
+    align-items: center;
+}
+.slide ul li{
+    line-height: 1px
+}
+.slide ul li p{
+    font-size: 70px
 }
