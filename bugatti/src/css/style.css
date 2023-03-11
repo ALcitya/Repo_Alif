@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+header{
+    height: 10vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.merek{
+    margin-top: 10px;
+    background-color: white;
+    width:10vh;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 99;
+}
+.merek h3{
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 33px;
+    left: 50px;
+    position: absolute;
+}
+.merek h1{
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 5px;
+}
+header .garis{
+    width: 28vw;
+    height: 10vh;
+    border-bottom: 3px solid purple;
+    position: absolute;
+    bottom: 30px;
+}
+.nav-kiri{
+    margin-left: 2vw;
+    width: 50px;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tengah{
+    width: 50px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.tengah a{
+    transform: rotate(-90deg);
+    transform-origin:top left ;
+    margin-left: 50px;
+    text-align: left;
+    width: 70px;
+    height: 20px;
+    text-decoration: none;
+    color:black;
+    font-weight: 900;
+}
+.lambang img{
+    width: 50px;
+    position: absolute;
+    top: 3vh;
+    left: 2vw;
+}
+.bola-ungu{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(126, 4, 108, 0.84);
+    border-radius: 50%;
+    z-index: 99;
+    position: absolute;
+    left: 235px;
+    top: 210px;
+}
+.watermark{
+    width: 50px;
+    height: 50px;
+    margin-left: 150px;
+    z-index: -999;
+}
+.watermark h1{
+    font-size: 200px;
+    width: 350px;
+    height:250px;
+    line-height: 1.5;
+    color:#d6d5d5;
+}
+.watermark h1:nth-child(2){
+    line-height: 0.5;
+}
+.lingkaran{
+    border: 2px solid purple;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50px;
+    bottom:30px;
+}
+.pause{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #21201f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.reel{
+    position: absolute;
+    bottom: 60px;
+    left: 150px;
+}
+.mobil{
+    position: absolute;
+    left: 300px;
+    top: 90px;
+    z-index: 99;
+}
+.vintage h5{
+    border-top:2px solid rgba(0, 0, 0, 0.893) ;
+    width: 110px;
+    position: absolute;
+    left: 30vw;
+    bottom: 28vh;
+    transform: translateX(90px);
+    text-align: right;
+    font-size: 15px;
+    font-weight: 500;
+}
+.vintage h4{
+    border-bottom:3px solid purple ;
+    width: 150px;
+    position: absolute;
+    bottom: 25vh;
+    left: 30vw;
+    transform: translateX(20px);
+    text-align: right;
+    font-size: 15px;
+    font-weight: 900;
+}
+.garis-hitam{
+    position: absolute;
+    bottom: -200px;
+    left: 55vw;
+    border-left: 100px solid black;
+    height: 1100px;
+    transform: rotate(35deg);
+}
+.garis-ungu{
+    position: absolute;
+    bottom: -200px;
+    left: 70vw;
+    border-left: 50px solid purple;
+    height: 1100px;
+    transform: rotate(35deg);
+}
