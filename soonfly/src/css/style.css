@@ -55,6 +55,15 @@ nav{
     border-radius: 10px;
     margin-right: 5px;
 }
+.burger i{
+    width: 0px;
+    height:0px;
+    font-size:0px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 main{
     width: 90vw;
     height: 75vh;
@@ -343,4 +352,50 @@ a{
     height: 30px;
     background-image: url(../../resource/img/barcode.jpg);
     background-size: cover;
+}
+@media only screen and (max-width: 600px)
+{
+    nav{
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .judul{
+        font-size: 20px;
+        width: 20vw;
+    }
+    .judul img{
+        width: 15px;
+        height: 15px;
+    }
+    .tengah{
+        width: 0vw;
+    }
+    .tengah ul li{
+        font-size: 0px;
+    }
+    .action{
+        width: 20vw;
+        }
+    }
+    .action .buton{
+        width: 0;
+        height: 0;
+        font-size: 0;
+        color: black;
+    }
+    .action .burger{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .burger i{
+        font-size: 15px;
+        opacity: 1;
+    }
 }
