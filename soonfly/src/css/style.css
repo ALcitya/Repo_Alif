@@ -56,7 +56,7 @@ nav{
     margin-right: 5px;
 }
 main{
-    width: 85vw;
+    width: 90vw;
     height: 75vh;
     margin:8vh 5vw 5vh 8vw;
     position: relative;
@@ -138,16 +138,16 @@ a{
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: -50px;
     color: black;
 }
 
 .pesawat{
     background-image: url(../../resource/img/pesiwit.jpg);
     background-size: cover;
-    width: 220px;
-    height: 160px;
+    width: 18vw;
+    height: 25vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -156,7 +156,7 @@ a{
     padding: 5px 10px 10px 10px;
     position: absolute;
     top:75px;
-    left: 50px;
+    left: 0;
 }
 .head{
     display: flex;
@@ -192,9 +192,9 @@ a{
 .calender{
     color: whitesmoke;
     position: absolute;
-    left: 50px;
-    bottom: 50px;
-    width: 220px;
+    left: 0px;
+    bottom: 25px;
+    width: 18vw;
     height: 160px;
     padding: 10px;
     border-radius: 20px;
