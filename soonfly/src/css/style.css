@@ -13,6 +13,7 @@ nav{
     color:whitesmoke;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-radius: 10px;
     font-size: medium;
 }
@@ -44,6 +45,7 @@ nav{
 .action{
     display: flex;
     align-items: center;
+    margin-right: -20vw;
 }
 .buton{
     border: 1px solid white;
@@ -56,19 +58,13 @@ nav{
     margin-right: 5px;
 }
 .burger i{
-    width: 0px;
-    height:0px;
-    font-size:0px;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
 }
 main{
     width: 90vw;
     height: 75vh;
-    margin:8vh 5vw 5vh 8vw;
-    position: relative;
+    margin:5vh 5vw;
+    display: flex;
 }
 .aplikasi{
     height:20px;
@@ -85,6 +81,9 @@ main{
     width:30vw;
     font-weight: 700;
     text-transform: capitalize;
+}
+.text{
+    width: 45vw;
 }
 .text p{
     width:35vw;
@@ -136,22 +135,21 @@ a{
 .gambar{
     width: 45vw;
     height: 75vh;
-    position: absolute;
-    top: 0;
-    right:0;
-    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    position: relative;
+}
+.gambar-kiri{
+    width: 20vw;
+    height: 80vh;
 }
 .tambah{
     font-size: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 5px;
-    left: -50px;
+    top: 4vh;
+    left: -3vw;
     color: black;
+    position: absolute;
 }
-
 .pesawat{
     background-image: url(../../resource/img/pesiwit.jpg);
     background-size: cover;
@@ -163,9 +161,7 @@ a{
     justify-content: space-between;
     color: rgb(252, 239, 239);
     padding: 5px 10px 10px 10px;
-    position: absolute;
-    top:75px;
-    left: 0;
+    margin-top: 15vh;
 }
 .head{
     display: flex;
@@ -199,10 +195,8 @@ a{
     align-items: center;
 }
 .calender{
+    margin-top: 5px;
     color: whitesmoke;
-    position: absolute;
-    left: 0px;
-    bottom: 25px;
     width: 18vw;
     height: 160px;
     padding: 10px;
@@ -221,20 +215,23 @@ a{
     height: 40px;
 }
 .titik{
-    border: 1px dotted white;
+    border: 2px dotted white;
     margin-top: 10px;
 }
 .calender .tiket{
     margin-top: 40px;
+}
+.gambar-kanan{
+    width: 25vw;
+    height: 80vh;
+    border: 2px solid pink;
+    margin-left: 0vw;
 }
 .sayap{
     width: 230px;
     height: 150px;
     border-radius: 15px;
     background-color: #110f0f;
-    position: absolute;
-    right: 60px;
-    top: 0px;
     color: white;
     padding: 10px;
 }
@@ -258,69 +255,90 @@ a{
     border-radius: 50%;
 }
 .waw{
+    margin-top: 5px;
     width: 230px;
     height: 75px;
     background-color: #0e0d13;
     color: white;
     border-radius: 10px;
-    position: absolute;
-    right: 60px;
-    top: 175px;
     padding: 10px;
+    position: relative;
 }
 .waw .title, .jkf .title{
     font-size: 25px;
 }
-.lingkaran{
+.waw .lingkaran{
     width: 20px;
     height: 20px;
     border: 1px solid white;
     border-radius: 50%;
     position: absolute;
-    right: 115px;
-    left: 115px;
-    top:35px;
+    left: 9vw;
+    top: 5vh;
 }
-.titik-titik{
-    border-left: 1px dotted white;
-    height: 30px;
-    position: absolute;
-    top: 60px;
-    left: 125px;
-}
-.bawah{
+.waw .bawah{
+    margin-top: 10px;
     display: flex;
-    height: 50px;
-    width: 230px;
-    margin-top:10px ;
     align-items: center;
     justify-content: space-between;
     font-size:15px ;
 }
+.waw .bawah h5{
+    border-right:2px dotted white;
+    width: 120px; 
+    height: 40px;
+    line-height: 5;
+}
+.bawah .jam{
+    width: 120px; 
+    height: 40px;
+    line-height: 4;
+    text-align: right;
+}
 .jkf{
+    margin-top: 5px;
     width: 230px;
     height: 75px;
     padding: 10px;
-    position: absolute;
-    bottom: 115px;
-    right: 60px;
     background-color: silver;
     border-radius: 10px;
     color: black;
+    position: relative;
 }
-.titik2{
-    border-left:1px dotted white;
-    height: 50px;
+.jkf .lingkaran{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
     position: absolute;
-    left: 125px;
+    left: 9vw;
+    top: 5vh;
+}
+.jkf .titik-titik{
+    border-right:2px dotted white;
+    height: 30px;
+    position: absolute;
+    left: 9.6vw;
     top: 0;
 }
+.jkf .bawah{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:15px;
+}
+.jkf .bawah h5{
+    line-height: 3;
+}
+.jkf .bawah .jam{
+    line-height: 3;
+}
 .barcode{
+    margin-top: 5px;
     height: 85px;
     width: 230px;
     border-radius: 10px;
     background-color: white;
-    position: absolute;
     bottom: 5px;
     right: 60px;
     padding: 10px;
@@ -332,7 +350,6 @@ a{
     border-bottom:1px solid black;
     height: 3px;
     width: 230px;
-    position: absolute;
     top: 35px;
     left: 10px;
 }
@@ -356,18 +373,20 @@ a{
 @media only screen and (max-width: 600px)
 {
     nav{
-        width: 70vw;
+        width: 85vw;
+        margin-left: 5vw;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .judul{
+        margin-left: -20px;
         font-size: 20px;
         width: 20vw;
     }
     .judul img{
-        width: 15px;
-        height: 15px;
+        width: 30px;
+        height: 30px;
     }
     .tengah{
         width: 0vw;
@@ -376,18 +395,14 @@ a{
         font-size: 0px;
     }
     .action{
-        width: 20vw;
-        }
+        width: 0vw;
     }
     .action .buton{
-        width: 0;
-        height: 0;
-        font-size: 0;
-        color: black;
+        display: none;
     }
-    .action .burger{
-        width: 40px;
-        height: 40px;
+    .burger{
+        width: 50px;
+        height: 50px;
         border-radius: 10px;
         border: 2px solid white;
         display: flex;
@@ -397,5 +412,13 @@ a{
     .burger i{
         font-size: 15px;
         opacity: 1;
+    }
+    .main{
+        display: flex;
+    }
+    .gambar{
+        display: flex;
+        flex-direction: column;
+        position: none;
     }
 }
