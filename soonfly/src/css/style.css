@@ -4,11 +4,12 @@ html{
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(228, 235, 241);
+    background-color: #f2f3ea;
+    position: relative;
 }
 nav{
-    width: 98vw;
-    height: 8vh;
+    width: 95vw;
+    height: 10vh;
     background-color: rgb(18, 18, 24);
     color:whitesmoke;
     display: flex;
@@ -16,6 +17,10 @@ nav{
     justify-content: space-between;
     border-radius: 10px;
     font-size: medium;
+    position: fixed;
+    top:5vh;
+    left: 2vw;
+    z-index: 99;
 }
 .judul{
     width: 20vw;
@@ -63,45 +68,53 @@ nav{
 main{
     width: 90vw;
     height: 75vh;
-    margin:5vh 5vw;
+    margin-top:25vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     display: flex;
+    margin-bottom: 20vh;
 }
 .aplikasi{
     height:20px;
-    width:100px;
+    width:180px;
     border: 2px solid black;
-    border-radius: 4px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items:center;
     font-weight: 500;
+    margin-bottom: 30px;
 }
 .header1 {
-    font-size: 50px;
-    width:30vw;
+    font-size: 60px;
+    width:35vw;
     font-weight: 700;
     text-transform: capitalize;
 }
 .text{
     width: 45vw;
+    margin-top: 35px;
 }
 .text p{
     width:35vw;
     color: black;
+    margin-top:30px;
 }
 .get_started{
-    width: 200px;
-    height:40px;
+    width: 250px;
+    height:50px;
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: black;
     color: white;
-    margin-bottom: 45px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 .status{
+    margin-top: 50px;
     width:50vw;
     height: 20vh;
     display: flex;
@@ -116,6 +129,9 @@ main{
     align-items: center;
     justify-content: space-between;
 }
+.icon{
+    font-size: 30px;
+}
 .garis{
     border-top:2px solid black;
     display: flex;
@@ -124,6 +140,8 @@ main{
 }
 .angka{
     font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .keterangan{
     width: 18vw;
@@ -140,28 +158,29 @@ a{
     position: relative;
 }
 .gambar-kiri{
-    width: 20vw;
-    height: 80vh;
+    width: 20%;
+    height: 80%;
+    margin-left: 50px;
 }
 .tambah{
     font-size: 110px;
     top: 4vh;
-    left: -3vw;
+    left: 0vw;
     color: black;
     position: absolute;
 }
 .pesawat{
     background-image: url(../../resource/img/pesiwit.jpg);
     background-size: cover;
-    width: 18vw;
-    height: 25vh;
+    width: 240px;
+    height: 190px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: rgb(252, 239, 239);
     padding: 5px 10px 10px 10px;
-    margin-top: 15vh;
+    margin-top: 100px;
 }
 .head{
     display: flex;
@@ -171,13 +190,9 @@ a{
     height: 40px;
     font-size: 10px;
 }
-.info{
-    font-weight: 900;
-    font-size: 20px;
-}
 .foot{
     width: 220px;
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -197,8 +212,8 @@ a{
 .calender{
     margin-top: 5px;
     color: whitesmoke;
-    width: 18vw;
-    height: 160px;
+    width: 240px;
+    height: 190px;
     padding: 10px;
     border-radius: 20px;
     background: #f8b4c0;
@@ -214,6 +229,10 @@ a{
     width: 220px;
     height: 40px;
 }
+.info{
+    font-weight: 900;
+    font-size: 20px;
+}
 .titik{
     border: 2px dotted white;
     margin-top: 10px;
@@ -222,42 +241,53 @@ a{
     margin-top: 40px;
 }
 .gambar-kanan{
-    width: 25vw;
-    height: 80vh;
-    border: 2px solid pink;
-    margin-left: 0vw;
+    width: 25%;
+    height: 80%;
+    margin-left: 150px;
 }
 .sayap{
-    width: 230px;
-    height: 150px;
+    width: 240px;
+    height: 190px;
     border-radius: 15px;
     background-color: #110f0f;
     color: white;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .atas, .nama{
     width: 230px;
     height: 10px;
+    font-size: 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.atas{
+    margin-top: 10px;
+}
+.nama{
+    margin-bottom:10px;
 }
 .pic{
     width: 220px;
-    height: 120px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .pic img{
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
 }
 .waw{
     margin-top: 5px;
-    width: 230px;
-    height: 75px;
+    width: 240px;
+    height: 100px;
     background-color: #0e0d13;
     color: white;
     border-radius: 10px;
@@ -273,21 +303,29 @@ a{
     border: 1px solid white;
     border-radius: 50%;
     position: absolute;
-    left: 9vw;
-    top: 5vh;
+    left: 45%;
+    top: 40%;
 }
 .waw .bawah{
-    margin-top: 10px;
+    margin:0px 10px 0px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size:15px ;
 }
-.waw .bawah h5{
+.waw .bawah .garis2{
     border-right:2px dotted white;
-    width: 120px; 
-    height: 40px;
+    height: 50px;
+    position: absolute;
+    left: 49%;
+    bottom: 0;
+    z-index: 99;
+}
+.waw .bawah h5{
+    width: 110px; 
+    height: 50px;
     line-height: 5;
+    font-size: 15px;
 }
 .bawah .jam{
     width: 120px; 
@@ -296,9 +334,9 @@ a{
     text-align: right;
 }
 .jkf{
-    margin-top: 5px;
-    width: 230px;
-    height: 75px;
+    margin: 5px;
+    width: 240px;
+    height: 100px;
     padding: 10px;
     background-color: silver;
     border-radius: 10px;
@@ -310,16 +348,15 @@ a{
     height: 20px;
     border: 1px solid white;
     border-radius: 50%;
-    position: absolute;
-    left: 9vw;
-    top: 5vh;
+    margin-left: 43%;
+    margin-top: 13px;
 }
 .jkf .titik-titik{
     border-right:2px dotted white;
-    height: 30px;
+    height: 50px;
     position: absolute;
-    left: 9.6vw;
-    top: 0;
+    left: 122px;
+    top: 0px;
 }
 .jkf .bawah{
     display: flex;
@@ -335,8 +372,8 @@ a{
 }
 .barcode{
     margin-top: 5px;
-    height: 85px;
-    width: 230px;
+    height: 90px;
+    width: 240px;
     border-radius: 10px;
     background-color: white;
     bottom: 5px;
@@ -344,13 +381,14 @@ a{
     padding: 10px;
 }
 .barcode .flight{
-    font-size: 10px;
+    font-size: 13px;
+    margin-top: -10px;
 }
 .barcode .titik2{
     border-bottom:1px solid black;
     height: 3px;
     width: 230px;
-    top: 35px;
+    margin-top: 10px;
     left: 10px;
 }
 .barcode .tengah{
@@ -359,6 +397,8 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .tengah i{
     font-size: 10px;
