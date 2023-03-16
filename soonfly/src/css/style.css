@@ -1,469 +1,503 @@
-html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #f2f3ea;
-    position: relative;
+body {
+  background-color: #f2f3ea;
+  position: relative;
 }
-nav{
-    width: 95vw;
-    height: 10vh;
-    background-color: rgb(18, 18, 24);
-    color:whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
-    font-size: medium;
-    position: fixed;
-    top:5vh;
-    left: 2vw;
-    z-index: 99;
+nav {
+  width: 95vw;
+  height: 10vh;
+  background-color: rgb(18, 18, 24);
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  font-size: medium;
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
 }
-.judul{
-    width: 20vw;
-    height:10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.judul {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.judul img{
-    height: 30px;
-    width: 
-    30px;
+.judul img {
+  height: 30px;
+  width: 30px;
 }
-.tengah{
-    width: 80vw;
-    display: flex;
-    justify-content: space-between;
+.tengah {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
 }
-.tengah ul{
-    display: flex;
-    width: 35vw;
-    justify-content: space-between;
+.tengah ul {
+  display: flex;
+  width: 35vw;
+  justify-content: space-between;
 }
-.tengah ul li{
-    list-style-type: none;
+.tengah ul li {
+  list-style-type: none;
 }
-.action{
-    display: flex;
-    align-items: center;
-    margin-right: -20vw;
+.action {
+  display: flex;
+  align-items: center;
+  margin-right: -20vw;
 }
-.buton{
-    border: 1px solid white;
-    height: 40px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin-right: 5px;
+.buton {
+  border: 1px solid white;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 5px;
 }
-.burger{
-    display: none;
+.burger {
+  display: none;
 }
-.burger i{
-    display: none;
+main {
+  width: 90vw;
+  height: 75vh;
+  margin-top: 6rem;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  display: flex;
+  margin-bottom: 20vh;
 }
-main{
-    width: 90vw;
-    height: 75vh;
-    margin-top:25vh;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-    display: flex;
-    margin-bottom: 20vh;
-}
-.aplikasi{
-    height:20px;
-    width:180px;
-    border: 2px solid black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    font-weight: 500;
-    margin-bottom: 30px;
+.aplikasi {
+  height: 20px;
+  width: 180px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 .header1 {
-    font-size: 60px;
-    width:35vw;
-    font-weight: 700;
-    text-transform: capitalize;
+  font-size: 60px;
+  width: 35vw;
+  font-weight: 700;
+  text-transform: capitalize;
 }
-.text{
-    width: 45vw;
-    margin-top: 35px;
+.text {
+  width: 45vw;
+  margin-top: 35px;
 }
-.text p{
-    width:35vw;
-    color: black;
-    margin-top:30px;
+.text p {
+  width: 35vw;
+  color: black;
+  margin-top: 30px;
 }
-.get_started{
-    width: 250px;
-    height:50px;
-    border: 1px solid black;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: black;
-    color: white;
-    margin-top: 40px;
-    margin-bottom: 20px;
+.get_started {
+  width: 50%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
-.status{
-    margin-top: 50px;
-    width:50vw;
-    height: 20vh;
-    display: flex;
+.status {
+  margin-top: 50px;
+  width: 50vw;
+  height: 20vh;
+  display: flex;
 }
-.value{
-    width: 20vw;
-    height: 20vh;
+.value {
+  width: 20vw;
+  height: 20vh;
 }
-.top{
-    width: 17vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.top {
+  width: 17vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.icon{
-    font-size: 30px;
+.icon {
+  font-size: 30px;
 }
-.garis{
-    border-top:2px solid black;
-    display: flex;
-    align-items: center;
-    width: 15vw;
+.garis {
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  width: 15vw;
 }
-.angka{
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.angka {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.keterangan{
-    width: 18vw;
+.keterangan {
+  width: 18vw;
 }
-a{
-    color: black;
-    font-weight: 800;
+a {
+  color: black;
+  font-weight: 800;
 }
-.gambar{
-    width: 45vw;
-    height: 75vh;
-    margin-right: 5vw;
-    display: flex;
-    position: relative;
+.gambar {
+  width: 45vw;
+  height: 75vh;
+  margin-right: 5vw;
+  display: flex;
+  position: relative;
 }
-.gambar-kiri{
+.gambar-kiri {
+  width: 20%;
+  height: 80%;
+  margin-left: 50px;
+}
+.tambah {
+  font-size: 110px;
+  top: 4vh;
+  left: 0vw;
+  color: black;
+  position: absolute;
+}
+.pesawat {
+  background-image: url(../../resource/img/pesiwit.jpg);
+  background-size: cover;
+  width: 240px;
+  height: 190px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(252, 239, 239);
+  padding: 5px 10px 10px 10px;
+  margin-top: 100px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  font-size: 10px;
+}
+.foot {
+  width: 220px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot h2 {
+  width: 100px;
+}
+.arow {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calender {
+  margin-top: 5px;
+  color: whitesmoke;
+  width: 240px;
+  height: 190px;
+  padding: 10px;
+  border-radius: 20px;
+  background: #f8b4c0;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #f8b4c0 0%,
+    #110f0f 30%
+  );
+  background: -webkit-radial-gradient(
+    circle farthest-corner at center center,
+    #f8b4c0 0%,
+    #110f0f 30%
+  );
+  background: -moz-radial-gradient(
+    circle farthest-corner at center center,
+    #f8b4c0 0%,
+    #110f0f 30%
+  );
+}
+.calender .top,
+.calender .tiket,
+.calender .event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 100;
+  width: 220px;
+  height: 40px;
+}
+.info {
+  font-weight: 900;
+  font-size: 20px;
+}
+.titik {
+  border: 2px dotted white;
+  margin-top: 10px;
+}
+.calender .tiket {
+  margin-top: 40px;
+}
+.gambar-kanan {
+  width: 25%;
+  height: 80%;
+  margin-left: 150px;
+}
+.sayap {
+  width: 240px;
+  height: 190px;
+  border-radius: 15px;
+  background-color: #110f0f;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.atas,
+.nama {
+  width: 230px;
+  height: 10px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.atas {
+  margin-top: 10px;
+}
+.nama {
+  margin-bottom: 10px;
+}
+.pic {
+  width: 220px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pic img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.waw {
+  margin-top: 5px;
+  width: 240px;
+  height: 100px;
+  background-color: #0e0d13;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+.waw .title,
+.jkf .title {
+  font-size: 25px;
+}
+.waw .lingkaran {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: 45%;
+  top: 40%;
+}
+.waw .bawah {
+  margin: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.waw .bawah .garis2 {
+  border-right: 2px dotted white;
+  height: 50px;
+  position: absolute;
+  left: 49%;
+  bottom: 0;
+  z-index: 99;
+}
+.waw .bawah h5 {
+  width: 110px;
+  height: 50px;
+  line-height: 5;
+  font-size: 15px;
+}
+.bawah .jam {
+  width: 120px;
+  height: 40px;
+  line-height: 4;
+  text-align: right;
+}
+.jkf {
+  margin: 5px;
+  width: 240px;
+  height: 100px;
+  padding: 10px;
+  background-color: silver;
+  border-radius: 10px;
+  color: black;
+  position: relative;
+}
+.jkf .lingkaran {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 43%;
+  margin-top: 13px;
+}
+.jkf .titik-titik {
+  border-right: 2px dotted white;
+  height: 50px;
+  position: absolute;
+  left: 122px;
+  top: 0px;
+}
+.jkf .bawah {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.jkf .bawah h5 {
+  line-height: 3;
+}
+.jkf .bawah .jam {
+  line-height: 3;
+}
+.barcode {
+  margin-top: 5px;
+  height: 90px;
+  width: 240px;
+  border-radius: 10px;
+  background-color: white;
+  bottom: 5px;
+  right: 60px;
+  padding: 10px;
+}
+.barcode .flight {
+  font-size: 13px;
+  margin-top: -10px;
+}
+.barcode .titik2 {
+  border-bottom: 1px solid black;
+  height: 3px;
+  width: 230px;
+  margin-top: 10px;
+  left: 10px;
+}
+.barcode .tengah {
+  width: 230px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.tengah i {
+  font-size: 10px;
+}
+.code {
+  margin-top: 5px;
+  width: 230px;
+  height: 30px;
+  background-image: url(../../resource/img/barcode.jpg);
+  background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    width: 90%;
+    height: 7.5%;
+  }
+  main {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .judul {
+    margin-left: 40px;
+    font-size: 16px;
     width: 20%;
-    height: 80%;
-    margin-left: 50px;
-}
-.tambah{
-    font-size: 110px;
-    top: 4vh;
-    left: 0vw;
-    color: black;
-    position: absolute;
-}
-.pesawat{
-    background-image: url(../../resource/img/pesiwit.jpg);
-    background-size: cover;
-    width: 240px;
-    height: 190px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: rgb(252, 239, 239);
-    padding: 5px 10px 10px 10px;
-    margin-top: 100px;
-}
-.head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 220px;
-    height: 40px;
-    font-size: 10px;
-}
-.foot{
-    width: 220px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.foot h2{
-    width: 100px;
-}
-.arow{
+  }
+  .judul img {
     width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 2px solid white;
+    aspect-ratio: 1/1;
+    margin-right: 8px;
+  }
+  .tengah {
+    width: 200px;
+    margin-right: 5px;
+  }
+  .tengah ul li {
+    display: none;
+  }
+  .action {
+    display: none;
+  }
+  .tengah .burger {
+    width: 80px;
+    height: 45px;
+    border-radius: 13px;
+    border: 1.5px solid white;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-}
-.calender{
-    margin-top: 5px;
-    color: whitesmoke;
-    width: 240px;
-    height: 190px;
-    padding: 10px;
-    border-radius: 20px;
-    background: #f8b4c0;
-    background: radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 30%);
-    background: -webkit-radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 30%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #f8b4c0 0%, #110f0f 30%);
-}
-.calender .top, .calender .tiket, .calender .event{
+    margin-right: 8px;
+  }
+  .burger i {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 100;
-    width: 220px;
-    height: 40px;
-}
-.info{
-    font-weight: 900;
-    font-size: 20px;
-}
-.titik{
-    border: 2px dotted white;
-    margin-top: 10px;
-}
-.calender .tiket{
-    margin-top: 40px;
-}
-.gambar-kanan{
-    width: 25%;
-    height: 80%;
-    margin-left: 150px;
-}
-.sayap{
-    width: 240px;
-    height: 190px;
-    border-radius: 15px;
-    background-color: #110f0f;
-    color: white;
-    padding: 10px;
+    font-size: 30px;
+  }
+  .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-.atas, .nama{
-    width: 230px;
-    height: 10px;
-    font-size: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.atas{
-    margin-top: 10px;
-}
-.nama{
-    margin-bottom:10px;
-}
-.pic{
-    width: 220px;
-    height: 200px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-}
-.pic img{
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-}
-.waw{
-    margin-top: 5px;
-    width: 240px;
-    height: 100px;
-    background-color: #0e0d13;
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
-    position: relative;
-}
-.waw .title, .jkf .title{
-    font-size: 25px;
-}
-.waw .lingkaran{
-    width: 20px;
-    height: 20px;
-    border: 1px solid white;
-    border-radius: 50%;
-    position: absolute;
-    left: 45%;
-    top: 40%;
-}
-.waw .bawah{
-    margin:0px 10px 0px 10px;
+  }
+  .text {
+    width: 100%;
+  }
+  .gambar {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    font-size:15px ;
-}
-.waw .bawah .garis2{
-    border-right:2px dotted white;
-    height: 50px;
-    position: absolute;
-    left: 49%;
-    bottom: 0;
-    z-index: 99;
-}
-.waw .bawah h5{
-    width: 110px; 
-    height: 50px;
-    line-height: 5;
-    font-size: 15px;
-}
-.bawah .jam{
-    width: 120px; 
-    height: 40px;
-    line-height: 4;
-    text-align: right;
-}
-.jkf{
-    margin: 5px;
-    width: 240px;
-    height: 100px;
-    padding: 10px;
-    background-color: silver;
-    border-radius: 10px;
-    color: black;
-    position: relative;
-}
-.jkf .lingkaran{
-    width: 20px;
-    height: 20px;
-    border: 1px solid white;
-    border-radius: 50%;
-    margin-left: 43%;
-    margin-top: 13px;
-}
-.jkf .titik-titik{
-    border-right:2px dotted white;
-    height: 50px;
-    position: absolute;
-    left: 122px;
-    top: 0px;
-}
-.jkf .bawah{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size:15px;
-}
-.jkf .bawah h5{
-    line-height: 3;
-}
-.jkf .bawah .jam{
-    line-height: 3;
-}
-.barcode{
-    margin-top: 5px;
-    height: 90px;
-    width: 240px;
-    border-radius: 10px;
-    background-color: white;
-    bottom: 5px;
-    right: 60px;
-    padding: 10px;
-}
-.barcode .flight{
-    font-size: 13px;
-    margin-top: -10px;
-}
-.barcode .titik2{
-    border-bottom:1px solid black;
-    height: 3px;
-    width: 230px;
-    margin-top: 10px;
-    left: 10px;
-}
-.barcode .tengah{
-    width: 230px;
-    height: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.tengah i{
-    font-size: 10px;
-}
-.code{
-    margin-top: 5px;
-    width: 230px;
-    height: 30px;
-    background-image: url(../../resource/img/barcode.jpg);
-    background-size: cover;
-}
-@media only screen and (max-width: 600px)
-{
-    nav{
-        width: 90%;
-        margin-left: 5vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .judul{
-        margin-left: 40px;
-        font-size: 20px;
-        width: 20%;
-    }
-    .judul img{
-        width: 30px;
-        height: 30px;
-    }
-    .tengah{
-        width: 200px;
-        margin-right:5px ;
-    }
-    .tengah ul li{
-        display: none;
-    }
-    .action{
-        display: none;
-    }
-    .tengah .burger{
-        width: 120px;
-        height: 50px;
-        border-radius: 13px;
-        border: 2px solid white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .burger i{
-        display: flex;
-        font-size: 30px;
-    }
-    .main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .text{
-        width: 100%;
-    }
-    .gambar{
-        display: flex;
-        flex-direction: column;
-    }
+  }
+  .gambar-kanan {
+    flex-direction: column;
+  }
+  .tambah {
+    display: none;
+  }
+  .header1 {
+    font-size: 3rem;
+    text-align: justify;
+  }
+  .get_started {
+    width: 100%;
+  }
+  .gambar-kanan {
+    margin-left: 0;
+  }
 }
