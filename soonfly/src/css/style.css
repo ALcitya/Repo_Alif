@@ -62,6 +62,9 @@ nav{
     border-radius: 10px;
     margin-right: 5px;
 }
+.burger{
+    display: none;
+}
 .burger i{
     display: none;
 }
@@ -413,52 +416,54 @@ a{
 @media only screen and (max-width: 600px)
 {
     nav{
-        width: 85vw;
+        width: 90%;
         margin-left: 5vw;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .judul{
-        margin-left: -20px;
+        margin-left: 40px;
         font-size: 20px;
-        width: 20vw;
+        width: 20%;
     }
     .judul img{
         width: 30px;
         height: 30px;
     }
     .tengah{
-        width: 0vw;
+        width: 200px;
+        margin-right:5px ;
     }
     .tengah ul li{
-        font-size: 0px;
-    }
-    .action{
-        width: 0vw;
-    }
-    .action .buton{
         display: none;
     }
-    .burger{
-        width: 50px;
+    .action{
+        display: none;
+    }
+    .tengah .burger{
+        width: 120px;
         height: 50px;
-        border-radius: 10px;
+        border-radius: 13px;
         border: 2px solid white;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .burger i{
-        font-size: 15px;
-        opacity: 1;
+        display: flex;
+        font-size: 30px;
     }
     .main{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text{
+        width: 100%;
     }
     .gambar{
         display: flex;
         flex-direction: column;
-        position: none;
     }
 }
