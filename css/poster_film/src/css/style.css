@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 html{
     margin: 0;
     padding:0;
@@ -6,13 +8,15 @@ html{
 main{
     width: 100%;
     display: flex;
+    font-family: 'Nunito', sans-serif;
 }
 #left-content{
-    width: 15%;
+    width: 13%;
     height: 100%;
     background-color: white;
-    border-right: 3px solid rgba(128, 128, 128);
+    border-right: 2px solid rgba(128, 128, 128);
     padding-left: 30px;
+    position: fixed;
 }
 .nav-samping{
     display: flex;
@@ -31,7 +35,8 @@ main{
     height: 10vh;
 }
 .judul h2:nth-child(2){
-    color:#f31515
+    color:#f31515;
+    font-size: medium;
 }
 .feed{
     display: flex;
@@ -52,16 +57,38 @@ main{
 .daftar i:hover{
     color: #f31515;
 }
-.following ul{
-    width: 100%;
+.following .follow{
+    width: 120%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.following ul li{
-    list-style-type: none;
-    line-height: 25px;
+.status a{
+    color:rgb(29, 253, 126);
+    font-size: small;
+}
+.status a:hover{
+    color:#f31515;
+    font-size: small;
+}
+.follower{
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nama{
+    width: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nama img{
+    width: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
 .more{
     line-height: 50px;
@@ -73,14 +100,14 @@ main{
 .log-out{
     border-top: 2px solid rgba(128, 128, 128, 0.5);
     width: 100%;
-    height: 12vh;
-    display: flex;
-    align-items: center;
+    padding-top: 25%;
 }
 #right-content{
-    width: 80%;
-    background-color: blue;
+    width: 85%;
+    margin-left: 15%;
     padding-left: 30px;
+    justify-self: flex-end;
+    overflow: hidden;
 }
 .navbar{
     width: 100%;
@@ -99,10 +126,18 @@ main{
     display: flex;
     align-items: center;
     gap: 20px;
+    font-size:medium;
 }
 .navbar-kanan .profil{
-    outline: 1px solid #f31515;
-    padding:5px;
+    outline: 2px solid #f31515;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-kanan .profil img{
+    width: 30px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
 }
 .next{
@@ -129,18 +164,16 @@ main{
     height: 100%;
 }
 .main-content{
-    background-color: red;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .poster{
     background: rgb(0,29,69);
     background: linear-gradient(135deg, rgba(0,29,69,1) 50%, rgba(255,255,255,1) 100%);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 25px;
+    background-image: url(../../resource/img/poster.jpg);
+    background-size: cover;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     color: white;
     border-radius: 20px;
 }
@@ -168,7 +201,9 @@ main{
     aspect-ratio: 1/1;
 }
 .tonton-langsung{
-    margin-top: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 .watching{
     display: flex;
@@ -183,4 +218,115 @@ button{
     border-radius: 1rem;
     background-color: #f31515;
     color: white;
+}
+.cuplikan{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.clip{
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    background-size: cover;
+}
+.clip-1{
+    background-image: url(../../resource/img/cuplikan4.jpg);
+    position: relative;
+}
+.clip-2{
+    background-image: url(../../resource/img/cuplikan1.jpg);
+}
+.clip-3{
+    position: relative;
+    background-image: url(../../resource/img/cuplikan3.jpg);
+}
+.clip-1 i{
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    color: #f31515;
+    font-size: larger;
+}
+.clip-3 i{
+    position: absolute;
+    right:-20%;
+    top: 30%;
+    color: #f31515;
+    font-size: larger;
+}
+.isi-parties{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.kotak{
+    padding: 12px;
+    width: 20%;
+    border:1px solid gray;
+    border-radius: 1rem;
+    line-height: 0.5;
+}
+.foto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foto-film{
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius:12px ;
+}
+.grup{
+    position: relative;
+}
+.grup img{
+    width: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.grup img:nth-child(1){
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+}
+.grup img:nth-child(2){
+    position: absolute;
+    right: 15px;
+    z-index: 2;
+}
+.grup img:nth-child(3){
+    position: absolute;
+    right: 0;
+    z-index: 3;
+}
+.kotak .judul{
+    line-height: 0.5;
+}
+.history{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.kotak-history{
+    width: 23%;
+    height: 130px;
+    border:1px solid black;
+    border-radius: 1rem;
+    background-size: cover;
+}
+.kotak-history:nth-child(1){
+    background-image: url(../../resource/img/alita.jpg);
+}
+.kotak-history:nth-child(2){
+    background-image: url(../../resource/img/wanda.jpg);
+}
+.kotak-history:nth-child(3){
+    background-image: url(../../resource/img/jurassic.jpg);
+}
+.kotak-history:nth-child(4){
+    background-image: url(../../resource/img/avenger.jpg);
 }
