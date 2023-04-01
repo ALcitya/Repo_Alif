@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300&family=Playfair+Display&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    background-color: white;
+    padding: 1%;
+}
+nav{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: whitesmoke;
+    padding-left:5%;
+    padding-right:5%;
+    font-family: 'Noto Sans', sans-serif;
+}
+.left-navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-right: 30%;
+}
+.home{
+    display: flex;
+    width: 60%;
+    gap: 30px;
+}
+.home a{
+    color:black;
+    text-decoration: none;
+}
+.judul{
+    font-weight: 800;
+    font-size: larger;
+}
+.right-navbar button{
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
+main{
+    background-color: whitesmoke;
+    display:flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.left-content{
+    width: 30%;
+    margin-top: 40px;
+}
+.left-content h3{
+    font-size: 70px;
+    text-transform: capitalize;
+}
+.left-content p{
+   margin-top: 10px;
+   margin-bottom: 2rem;
+}
+.start{
+    display: flex;
+    gap: 20px;
+}
+.start button{
+    padding: 5px 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color:white;
+}
+.play{
+    width: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color:rgb(237, 237, 237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.play .lingkaran{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+}
+.mouse{
+    margin-top: 15px;
+}
+.gambar {
+    width:40%;
+}
+.botol{
+    margin-left: 30%;
+    width: 280px;
+    height: 400px;
+    border-radius: 0 12rem 12rem 0;
+    aspect-ratio:1/1 ;
+    background-color: white;
+}
+.botol img{
+    width: 180px;
+    height: 500px;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+.gambar .bawah{
+    width: 100%;
+    margin-top: 50px;
+}
+.caption{
+    width: 80%;
+}
+.right-content{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+}
+.isi{
+    width: 60%;
+    padding-bottom:20px;
+}
+.content-1, .content-2{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+}
+.more{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: flex-end;
+}
+.discover{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.panah{
+    display: flex;
+    align-items: center;
+}
+.panah i{
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+}
+.panah div{
+    width:30px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    right: -20px;
+}
+.caption-hp{
+    display: none;
+}
+@media only screen and (max-width:600px)
+{
+    .home{
+        display: none;
+    }
+    .judul{
+        font-size: xx-large;
+    }
+    .contact{
+        padding:20px 50px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        padding-bottom:5%;
+    }
+    .left-content p{
+        display: none;
+        width: 100%;
+    }
+    .left-content h3{
+        font-size: 75px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+    .left-content, .gambar, .right-content{
+        width: 100%;
+    }
+    .start{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .start button{
+        padding: 15px 0;
+        width: 100%;
+        font-size: larger;
+    }
+    .play{
+        display: none;
+    }
+    .gambar{
+        width: 100%;
+    }
+    .mouse{
+        display: none;
+    }
+    .botol{
+        border-radius: 50%;
+        width: 350px;
+        aspect-ratio: 1/1;
+        margin-top: 0;
+        margin-left:0% ;
+        display: flex;
+        justify-content: center;
+    }
+    .botol img{
+        margin: 0;
+        width: 200px;
+        height: 450px;
+    }
+    .caption{
+        display: none;
+    }
+    .caption-hp{
+        display: block;
+        font-size: large;
+        font-weight: 500;
+    }
+    .right-content{
+        width: 100%;
+        gap:10px;
+        margin-top: 50px;
+    }
+    .more{
+        width: 90%;
+        height: 50px;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .discover{
+        width: 60%;
+    }
+    .panah div{
+        width: 60px;
+    }
+}

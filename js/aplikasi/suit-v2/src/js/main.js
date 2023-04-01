@@ -14,7 +14,7 @@ let comp = computer(Math.round(Math.random() * 10));
 let user = prompt ("Masukkan pilihan (semut, manusia, gajah");
 function game(){
     let hasil;
-    if(comp=== user){
+    if(comp === user){
         hasil ="Seri"
     }
     else if(comp=== "gajah" && user === "semut"){
