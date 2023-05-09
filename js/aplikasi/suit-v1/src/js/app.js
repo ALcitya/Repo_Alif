@@ -29,7 +29,7 @@ do{
     else{
         alert("Input yang kamu masukkan tidak sesuai")
     }
-ulang = prompt("Apakah kamu ingin mengulang");
+ulang = confirm("Apakah kamu ingin mengulang");
 }while(ulang="y")
 if (ulang="n"){
     alert("terimakasih telah bermain")

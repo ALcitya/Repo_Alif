@@ -41,7 +41,7 @@ const program = function (pilihanPerhitungan){
     }
 }
 do{
-let pilihanPerhitungan=prompt("Masukkan pilihan perhitungan")
+let pilihanPerhitungan=prompt("Masukkan pilihan perhitungan\n 1.Penambahan 2. Pengurangan\n 3.Perkalian 4.Pembagian")
     program(pilihanPerhitungan)
 }while(condition)
 
