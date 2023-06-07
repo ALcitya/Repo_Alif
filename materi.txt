@@ -1,0 +1,134 @@
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif
+$ git clone https://github.com/ALcitya/vanilla.git
+Cloning into 'vanilla'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+
+
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif
+$ cd vanilla
+
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git remote add awal https://github.com/avnexcode/vanilla.git
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git remote -v
+awal    https://github.com/avnexcode/vanilla.git (fetch)
+awal    https://github.com/avnexcode/vanilla.git (push)
+origin  https://github.com/ALcitya/vanilla.git (fetch)
+origin  https://github.com/ALcitya/vanilla.git (push)
+
+// untuk mengetahui repository terhubung ke mana saja //
+
+
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git log
+commit fa261456b91fbfa7dedc47efb01675fe86b6a7e2 (HEAD -> main, origin/main, origin/HEAD)
+Author: Muhammad Fauzi Nur Aziz <axnvee18@gmail.com>
+Date:   Tue Jun 6 10:03:44 2023 +0700
+
+    asd
+// untuk mengetahui kondisi commit
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git fetch awal
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 280 bytes | 10.00 KiB/s, done.
+From https://github.com/avnexcode/vanilla
+ * [new branch]      main       -> awal/main
+
+// untuk menarik data dari repo utama
+
+
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ alias graph="git log --all --oneline --decorate --graph"
+
+
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git log
+commit fa261456b91fbfa7dedc47efb01675fe86b6a7e2 (HEAD -> main, origin/main, origin/HEAD)
+Author: Muhammad Fauzi Nur Aziz <axnvee18@gmail.com>
+Date:   Tue Jun 6 10:03:44 2023 +0700
+
+    asd
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git log --all --decorate --oneline --graph
+fatal: unrecognized argument: --oneline --graph
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ graph
+fatal: unrecognized argument: --decorate --graph
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git log --all --decorate --oneline
+169cd33 (awal/main) asd
+fa26145 (HEAD -> main, origin/main, origin/HEAD) asd
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git log --all --decorate --graph
+* commit 169cd3373cda30a8e5a58c74c0671d8bf1b5b159 (awal/main)
+| Author: Muhammad Fauzi Nur Aziz <axnvee18@gmail.com>
+| Date:   Tue Jun 6 10:24:32 2023 +0700
+|
+|     asd
+|
+* commit fa261456b91fbfa7dedc47efb01675fe86b6a7e2 (HEAD -> main, origin/main, origin/HEAD)
+  Author: Muhammad Fauzi Nur Aziz <axnvee18@gmail.com>
+  Date:   Tue Jun 6 10:03:44 2023 +0700
+
+      asd
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git log --all --decorate --graph
+* commit 169cd3373cda30a8e5a58c74c0671d8bf1b5b159 (awal/main)
+| Author: Muhammad Fauzi Nur Aziz <axnvee18@gmail.com>
+| Date:   Tue Jun 6 10:24:32 2023 +0700
+|
+|     asd
+|
+* commit fa261456b91fbfa7dedc47efb01675fe86b6a7e2 (HEAD -> main, origin/main, origin/HEAD)
+  Author: Muhammad Fauzi Nur Aziz <axnvee18@gmail.com>
+  Date:   Tue Jun 6 10:03:44 2023 +0700
+
+      asd
+
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git merge awal/main
+Updating fa26145..169cd33
+Fast-forward
+ 0. Variable/01.js | 1 +
+ 1 file changed, 1 insertion(+)
+
+// untuk menyatukan file dari repo utama dengan file di dalam repo pribadi
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Writing objects: 100% (4/4), 300 bytes | 150.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ALcitya/vanilla.git
+   fa26145..169cd33  main -> main
+branch 'main' set up to track 'origin/main'.
+
+USER@LAPTOP-D7QEEGTE MINGW64 ~/Desktop/coding/Alif/vanilla (main)
+$ git log --all --decorate --oneline
+169cd33 (HEAD -> main, origin/main, origin/HEAD, awal/main) asd
+fa26145 asd
