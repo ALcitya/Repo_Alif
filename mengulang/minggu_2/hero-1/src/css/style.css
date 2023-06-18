@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: rgb(231,231,232);
+background: linear-gradient(90deg, rgba(231,231,232,1) 0%, rgba(192,192,192,1) 28%, rgba(0,119,182,1) 100%);
+}
+.tulisan{
+    width: 50%;
+    padding: 8% 5% 10% 5%;
+}
+h5{
+    width: 50px;
+    text-align: center;
+    border: 2px solid #1d3557;
+}
+h1{
+    font-size: 80px;
+}
+p{
+    margin-top: 10px;
+    font-family: 'Lora', serif;
+}
+button{
+    margin-top: 40px;
+    padding: 10px;
+    border: none;
+    border-radius:10px;
+    background-color:#023e8a;
+    color: white;
+}
+.gambar{
+    width: 50%;
+    padding-top: 7%;
+}
+.gambar img{
+    width: 100%;
+}

@@ -1,0 +1,43 @@
+html{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/img/paint.png);
+    background-size: cover;
+    background-color: #fc684e;
+}
+.kiri{
+    width: 50%;
+}
+img{
+    width: 100%;
+}
+.blur{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    transform:rotate(8deg) ;
+    box-shadow: -20px 15px 53px 46px rgba(0,0,0,0.75);
+-webkit-box-shadow: -20px 15px 53px 46px rgba(0,0,0,0.75);
+-moz-box-shadow: -20px 15px 53px 46px rgba(0,0,0,0.75);
+}
+.kanan{
+    width: 50%;
+}
+h1{
+    width: fit-content;
+    color: blue;
+    font-size: 50px;
+}
+p{
+    width: fit-content;
+    font-size: medium;
+    color:white;
+}
