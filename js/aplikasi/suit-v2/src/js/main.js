@@ -10,7 +10,7 @@ function computer(random){
         return"semut"
     }
 }
-let comp = computer(Math.round(Math.random() * 10));
+let random = computer(Math.round(Math.random() * 10));
 let user = prompt ("Masukkan pilihan (semut, manusia, gajah)");
 function game(){
     let hasil;

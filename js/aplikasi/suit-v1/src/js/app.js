@@ -29,6 +29,7 @@ do{
     else{
         alert("Input yang kamu masukkan tidak sesuai")
     }
+    
 ulang = confirm("Apakah kamu ingin mengulang");
 }while(ulang="y")
 if (ulang="n"){
