@@ -1,0 +1,100 @@
+html{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 50%;
+    background-image: url(../assests/img/game.jpg);
+    background-size: cover;
+}
+.atas{
+    width: 100%;
+    height: 50%;
+    padding-top: 3px;
+}
+.logo img{
+    width: 30px;
+}
+.atas h1{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+.download{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+.aplikasi{
+    width: 20%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius:12px;
+    background-color: black;
+    font-size: 20px;
+}
+.tulisan{
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    color:white;
+}
+.aplikasi:active{
+    transform: scale(0.9);
+}
+
+.logo{
+    width: 10%;
+}
+h6{
+    margin-top:0 ;
+    margin-bottom: 0;
+}
+h3{
+    margin-top: 0;
+}
+.bawah{
+    margin-top: 15px;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+}
+.list{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pilihan a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 400;
+}
+.pilihan a:hover{
+    font-weight: 700;
+}
+.copyright{
+    color: white;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.amazon{
+    border: none;
+    background-color: none;
+}
+.amazon img{
+    width: 100%;
+    height: 100%;
+}
