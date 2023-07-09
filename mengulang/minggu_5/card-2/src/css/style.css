@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-around;
     background: rgb(0,255,135);
-    background: radial-gradient(circle, rgba(0,255,135,1) 10%, rgba(96,239,255,1) 100%);
+    background: linear-gradient(90deg, rgba(0,255,135,1) 0%, rgba(43,255,235,1) 48%, rgba(43,97,255,1) 100%);
 }
 .card{
     border: none;
@@ -20,19 +20,18 @@
     width: 20%;
     height: 350px;
     background-color: rgba(255, 255, 255, 0.696);
-    padding-top:10px ;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-around;
 }
 .card:hover{
-    border: 2px solid blue;
+    border: 2px solid purple;
     background-color: rgba(255, 255, 255, 0.9);
 }
 .card h3{
     text-align: center;
+    color: darkgreen;
 }
 .harga{
     font-size:15px;
@@ -49,19 +48,18 @@
 }
 .fitur ul li{
     list-style-type: none;
+    text-align: left;
 }
-
 button{
     width: 100%;
-    background-color: rgb(112, 224, 0);
+    background-color:  springgreen;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    justify-self: flex-end;
     font-size: medium;
     padding: 5px;
 }
 button:active{
-    background-color: #58b001;
+    background-color: rgba(6, 206, 106, 0.979);
     transform: scale(0.9);
 }
