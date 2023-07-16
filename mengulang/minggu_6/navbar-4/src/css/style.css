@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+nav, .kanan, .navigasi, .kiri{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 30px;
+}
+.kiri{
+    width: 30%;
+    justify-content: flex-start;
+}
+.navigasi{
+    width: 30%;
+}
+.kanan{
+    width: 30%;
+    justify-content: flex-end;
+}
+.profil a img{
+    width: 25px;
+    height: 25px;
+}
+.icon i{
+    font-size:larger;
+}
+input{
+    outline: none;
+    border: none;
+    width: 80%;
+}
+.search-box{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 60%;
+}
+.hover{
+    padding: 10px;
+}
+.hover:hover{
+    border-bottom: 3px solid orange;
+}
