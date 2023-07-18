@@ -1,0 +1,329 @@
+* ::before,
+*::after{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+.container{
+    width: 100%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content:space-around;
+    font-size:large;
+    font-weight:300;
+}
+.title{
+    font-size: 30px;
+    font-weight: 300;
+}
+.title b:nth-child(1){
+    color: #0b6759;
+}
+.title b:nth-child(2){
+    color: purple;
+}
+.home{
+    width:20%;
+    display:flex;
+    justify-content:space-between;
+    font-size: larger;
+}
+.register button:nth-child(1){
+    background-color: white;
+    border: none;
+    font-size: medium;
+}
+.register button:nth-child(2){
+    background-color: #0b6759;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    font: medium;
+}
+main{
+    width:100%;
+    height: 60%;
+    display: flex;
+}
+.left-content{
+    width: 20%;
+}
+.left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.retail{
+    transform: rotate(90deg);
+    background-color: rgb(6, 79, 73);
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:40px;
+    align-self:flex-start;
+    gap: 10px;
+    color: white;
+    margin-top:250px ;
+    padding-left: 10px;
+}
+.retail div:nth-child(1){
+    font-size:30px ;
+}
+.retail div:nth-child(3){
+    font-size:43px ;
+    width: 20%;
+    aspect-ratio: 1/1;
+    border-radius:50%;
+    background-color: rgb(150, 85, 211);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.judul{
+    margin-top: -7%;
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    width: 100%;
+    height: 30%;
+}
+.judul h1 img{
+    width: 120px;
+    z-index: -1;
+    position: relative;
+    left: 80px;
+}
+.judul button{
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color:#0b6759;
+}
+.profil{
+    width: 100%;
+    height:50%;
+    display: flex;
+    margin-top: 10%;
+}
+.profil-kiri{
+    width:20%;
+}
+.mini-profil{
+    margin-top: -20%;
+    width: 12%;
+}
+.foto div img{
+    width: 40px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+.foto div:nth-child(1) img{
+    z-index: 1;
+}
+.foto div:nth-child(2) img{
+    z-index: 3;
+    position: relative;
+    top: -20px;
+}
+.lingkaran{
+    width: 110px;
+    border: 2px dashed black;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lingkaran img{
+    width: 100px;
+}
+.transaksi{
+    height: 50px;
+}
+.transaksi h1{
+    font-size: 60px;
+}
+.profil-tengah{
+    display: flex;
+    width: 80%;
+}
+.profil-tengah h1{
+    font-size: 80px;
+}
+.img-1{
+    width: 30%;
+    height: 46%;
+    background-color: white;
+    height: 100%;
+}
+.img-1 img{
+    width: 200px;
+    aspect-ratio: 1/1;
+}
+.data{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    z-index: 1;
+    position: relative;
+    border-right: 3px solid black;
+}
+.data h1{
+    position: relative;
+    left:90px;
+}
+.data img{
+    width: 170px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.woman{
+    margin-top: 8%;
+    border-right:2px solid black;
+    z-index: 5;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+}
+.woman h1{
+    justify-self: center;
+    position: relative;
+    left: 40px;
+}
+.woman img{
+    width: 170px;
+    border-top-right-radius: 35%; 
+    border-top-left-radius: 35%; 
+    border-bottom-left-radius: 35%; 
+    border-bottom-right-radius: 35%; 
+}
+.money{
+    position: relative;
+    z-index: 10;
+    background-color: white;
+}
+.money .star img{
+    width: 100px;
+    height: 100px;
+}
+.money img{
+    width: 150px;
+    height: 200px;
+    margin-top: 90px;
+    border-top-right-radius: 35%; 
+    border-top-left-radius: 35%; 
+    border-bottom-left-radius: 35%; 
+    border-bottom-right-radius: 35%; 
+}
+.search{
+    position: relative;
+    z-index: 5;
+    padding-top: 50px;
+    overflow: hidden;
+    height: 230px;
+    border-left: 2px solid black;
+}
+.search img{
+    width: 200px;
+    border-top-right-radius:50% ;
+    border-bottom-right-radius:50%;
+}
+.right-content{
+    width: 30%;
+}
+.finance{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ungu{
+    width: 50px;
+    height: 130px;
+    background-color: rgb(150, 85, 211);
+    z-index: -10;
+}
+.tulisan{
+    width: 200px;
+}
+.tulisan div{
+    border: 1px solid black;
+    width:20px
+}
+.kantong img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.pembungkus-kanan{
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.review{
+    width: 350px;
+    height: 100px;
+    background-color: #0b6759;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:40px;
+    color: white;
+    border-radius: 50px;
+}
+.review p{
+    font-size: 20px;
+}
+.review img{
+    width: 20px;
+}
+footer{
+    width:100%;
+    background-color: black;
+}
+footer ul{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul li{
+    list-style-type: none;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+footer ul li img{
+    width: 50px;
+    height: 50px;
+}
+.buntut{
+    transform: rotate(180deg);
+    width: 100px;
+    position: absolute;
+    right: 50px;
+}
