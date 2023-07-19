@@ -1,0 +1,21 @@
+const section = document.getElementById("sesi-2")
+const container = section.getElementsByClassName("container-3")
+const container = section.querySelector(".container:nth-child(1)")
+
+const section = document.getElementById('sesi-1')
+const button = document.querySelector('button')
+const container = section.querySelector('container-2')
+
+let nama = "amix"
+
+section.innerHTML = `<h1>Hallo ${nama}</h1>`
+section.style.textAlign = 'center'
+section.style.color= 'green'
+button.setAttribute('type', 'button')
+section.getAttribute('id')
+
+element.innerHTML = `<h1>${variable}</h1>`
+element.style.<css-properti> = 'value'
+element.setAttribute('Attribute', 'value')
+element.getAttribute('Attribute')
+element.removeAttribute('Attribute')

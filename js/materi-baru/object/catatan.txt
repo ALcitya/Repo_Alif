@@ -1,0 +1,16 @@
+{
+    key:value
+}
+{
+    username:"amjink"
+    function()=>{
+        console.log("asd)
+    }
+    // didalam objek bisa berisi function
+}
+const obj ={
+    username:"Andi",
+    alamat:"kebonsari"
+}
+console.log(obj.username)
+// cara memanggil isi dari objek

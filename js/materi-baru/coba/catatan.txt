@@ -1,0 +1,19 @@
+const query = document.querySelector("div")
+const select = document.querySelectorAll("div")
+const id = document.getElementById("kelas")
+const cls = document.getElementsByClassName("container")
+const tag = document.getElementsByTagName("h1")
+
+cls.addEvenListener("aksi", "callbackfungsi")
+console.log(tag)
+
+classList.add()
+classList.remove()
+classList.toggle()
+classList.contains()
+
+document.createElement()
+document.createTextNode()
+
+element.append()
+element.appendChild()
