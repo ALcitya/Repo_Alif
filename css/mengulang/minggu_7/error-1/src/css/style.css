@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    /* background-color: white; */
+}
+.error{
+    font-size: 160px;
+    z-index: 1;
+    font-family: 'Foldit', 'cursive';
+}
+.tulisan{
+    z-index: 5;
+    text-align: center;
+}
+.tulisan h2{
+    margin-top: -60px;
+    text-transform: uppercase;
+    color: white;
+}
+.tulisan button{
+    background: rgb(245,39,39);
+    background: linear-gradient(90deg, rgba(245,39,39,1) 0%, rgba(245,121,19,1) 100%);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+}
+.tulisan button:hover{
+    background: rgb(245,39,39);
+    background: radial-gradient(circle, rgba(245,39,39,1) 20%, rgba(245,136,19,1) 100%);
+    cursor: pointer;
+}

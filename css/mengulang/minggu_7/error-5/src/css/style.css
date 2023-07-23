@@ -1,0 +1,59 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: whitesmoke;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.atas{
+    font-size: 60px;
+    color: red;
+}
+.tengah img{
+    width: 400px;
+}
+.bawah{
+    width: 30%;
+}
+.bawah{
+    margin-top:10px ;
+    justify-content:space-between;
+}
+.list, .bawah{
+    display: flex;
+    align-items: center;
+}
+.list{
+    gap: 10px;
+    padding:13px 20px;
+    border-radius:15px;
+    border: none;
+    background-color: white;
+    font-size: small;
+    font-weight: 500;
+    border: 1px solid black;
+}
+.list:hover{
+    background-color: rgb(161, 160, 160);
+}
+.list:active{
+    transform: scale(0.9);
+}
+
+.list i{
+    font-size: medium;
+    margin: 0;
+    color: rgb(250, 38, 38);
+}
+.list p{
+    margin: 0;
+}
